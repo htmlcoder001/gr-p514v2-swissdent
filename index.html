@@ -755,6 +755,8 @@ display: none;
 		.form_wrap {
 			max-width: 300px;
 			margin: 0 auto;
+			padding: 89px 13px 16px;
+			box-shadow: 0 0 20px 13px #00000026;
 		}
 		.form_image_wrap_image {
 			margin: 0 auto;
@@ -777,6 +779,7 @@ display: none;
 			margin-top: 13px;
 			color: #000;
 			text-align: left;
+			font-size: 16px;
 		}
 		#price {
 			display: flex;
@@ -816,6 +819,9 @@ display: none;
 			color: gray;
 			font-size: 12px;
 		}
+		div#form_image {
+			margin: 0 0 -88px 0;
+		}
 	</style>
 	
 	<div id="form">
@@ -827,7 +833,8 @@ display: none;
 		
 		
 		<div class="form_wrap" id="objectScrollAttention">
-			<form method="POST" geo="gr" action="api.php" onsubmit="return validate_form(this, 'Πληκτρολογηστε τον σωστο αριθμο τηλεφωνου');">
+			<form method="POST" geo="gr" action="api.php" 
+			onsubmit="return validate_form(this, 'Πληκτρολογηστε τον σωστο αριθμο τηλεφωνου');">
 				<label class="descount">Έκπτωση -50%</label>
 				
 				<div id="price">
